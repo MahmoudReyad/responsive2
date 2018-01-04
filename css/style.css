@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial';
+}
+body {
+  height: 2000px;
+
+}
+/*Start Header*/
+.main-header {
+  background-image: url('../images/hero-01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 75px;
+
+}
+.navbar-default {
+  background-color: transparent;
+  border: transparent;
+  padding-top: 5px;
+}
+.navbar-default .navbar-nav > li > a , .navbar-default .navbar-brand{
+  color: #fff;
+}
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+ .navbar-brand span {
+   display: inline;
+   font-size: 30px;
+   font-weight: bolder;
+ }
+  .navbar-brand img {
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+  .main-header .header-content {
+    color: #333;
+    font-size: 20px;
+
+  }
+  .main-header .header-content .company-logo{
+    width: 150px;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    margin-top: 117px;
+    margin-bottom: 60px;
+  }
+  /*Start Hex Shape*/
+  .main-header .header-content .company-logo::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 75px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 0px;
+
+  }
+  .main-header .header-content .company-logo::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border: 75px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    left: 0px;
+    bottom: 82px;
+  }
+  /*End Hex Shape*/
+
+
+  .main-header .header-content h3 {
+    color: #fff;
+  }
+.main-header .header-content .mybtn {
+   color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    padding: 8px 40px;
+    border-width: 2px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.main-header .header-content #scroll {
+  display: block;
+  margin: auto;
+  animation: scroll_animation 5s linear infinite;
+  cursor: pointer;
+}
+/*Start Scroll Animation*/
+@-webkit-keyframes scroll_animation {
+  from{
+    transform:translateY(10px);
+  }
+  to{
+    transform:translateY(-10px);
+  }
+}
+@keyframes  scroll_animation {
+  from{
+    transform:translateY(10px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+/*End Scroll Animation*/
+/*End Header*/
+/*Start Our Services*/
+.our_services {
+  padding: 15px 0 50px;
+  background-color: #fafcfe;
+}
+.our_services .container .underline {
+  position: relative;
+}
+.our_services .container .underline h3 {
+  color: #2980b9;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.our_services .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #2980b9;
+    position: absolute;
+    top: 25px;
+}
+.our_services .container .row >div i{
+  color: #9b9c9d;
+  display: block;
+}
+.our_services .container .row >div p:first-of-type{
+  font-size: 20px;
+  color:#9b9c9d;
+}
+.our_services .container .row >div p:last-of-type{
+  width: 250px;
+  display: inline-block;
+}
+/*End Our Services*/
+/*Start Our Portfolio*/
+.our_portfolio  {
+  background-image: url('../images/hero-02.jpg');
+  background-size: cover;
+
+}
+.our_portfolio  .underline{
+  position: relative;
+}
+.our_portfolio h3 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+.our_portfolio  .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+}
+.our_portfolio .container .row > div {
+  padding: 0;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.our_portfolio .container .row > div  img {
+  height: 225px;
+  width:100%;
+}
+.our_portfolio .container .row > div .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(156, 156, 156 , .8);
+  width: 100%;
+  display: none;
+  transition: all .5s ease-in-out;
+
+}
+.our_portfolio .container .row > div .overlay h3 {
+  margin-top: 25%;
+}
+/*OverLay Hover*/
+.our_portfolio .container .row div:first-of-type:hover .overlay   {
+  display: block;
+
+
+}
+.our_portfolio .container .row div:nth-of-type(2):hover .overlay  {
+  display: block;
+}
+.our_portfolio .container .row div:nth-of-type(3):hover .overlay  {
+  display: block;
+}
+.our_portfolio .container .row div:nth-of-type(4):hover .overlay  {
+  display: block;
+}
+.our_portfolio .container .row div:nth-of-type(5):hover .overlay  {
+  display: block;
+}
+.our_portfolio .container .row div:last-of-type:hover .overlay  {
+  display: block;
+}
+/*End OverLay Hover*/
+/*End Our Portfolio*/
+/*Start Our Team*/
+.our_team{
+  padding-top: 35px;
+  background-color: #fafcfe;
+  padding-bottom: 15px;
+}
+.our_team  .container .underline{
+  position: relative;
+}
+.our_team .container .underline h3 {
+  color: #2980b9;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.our_team .container .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #2980b9;
+    position: absolute;
+    top: 25px;
+}
+.our_team .container > p {
+  display: inline-block;
+  color: #909192;
+}
+.our_team .container .row > div .overlay_content {
+  position: relative;
+}
+.our_team .container .row >div .overlay_content .overlay {
+  position: absolute;
+  left: 7%;
+  top: 0;
+  background-color: #2980b9;
+  width: 86%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.our_team .container .row >div .overlay_content .overlay i {
+  margin-top: 100px;
+  margin-right: 10px;
+  color: #2980b9;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+.our_team .container .row >div .overlay_content img {
+  height: 218px;
+  width: 87%;
+}
+.our_team .container .row > div p:first-of-type {
+  color: #2980b9;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.our_team .container .row > div p:last-of-type {
+  margin: 0;
+}
+/*Start OverLay Hover*/
+.our_team .container .row div:first-of-type .overlay_content:hover .overlay,
+.our_team .container .row div:nth-of-type(2) .overlay_content:hover .overlay,
+.our_team .container .row div:nth-of-type(3) .overlay_content:hover .overlay,
+.our_team .container .row div:last-of-type .overlay_content:hover .overlay
+ {
+  opacity: .6;
+}
+/*End OverLay Hover*/
+/*End Our Team*/
+/*Start Our Offices*/
+.our_offices {
+  background-image: url('../images/hero-03.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: .8;
+
+}
+.our_offices .container .underline {
+  position: relative;
+}
+.our_offices .container .underline h3 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.our_offices .container .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+}
+.our_offices .container p {
+  color: #a6a7a8;
+}
+.our_offices .container img {
+  margin: 20px auto 0;
+}
+.our_offices .overlay {
+  background-color: #555;
+  width: 100%;
+  opacity: .8;
+}
+.our_offices .overlay .seq {
+  z-index: 9999;
+  opacity: 1;
+}
+/*End Our Offices*/
+/*Start Our Clients*/
+.our_clients{
+  padding-top: 10px;
+  background-color: #fafcfe;
+  padding-bottom: 10px;
+}
+.our_clients .container .underline {
+  position: relative;
+}
+.our_clients .container .underline h3 {
+  color: #2980b9;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.our_clients .container .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #2980b9;
+    position: absolute;
+    top: 25px;
+}
+.our_clients .container p {
+  color: #a6a7a8;
+}
+.our_clients .container .row > div {
+  margin: 15px 0;
+}
+.our_clients .container .row > div img {
+  display: inline-block;;
+}
+/*.our_clients .container p:nth-of-type(2){
+  width: 70%;
+  margin: auto;
+}*/
+/*Start Slide*/
+.carousel .carousel-inner .item >p:first-of-type{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.carousel-control {
+  color: #2980b9;
+  bottom: 40px;
+}
+.carousel .carousel-inner .item >p:last-of-type span{
+  color: #2980b9;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+/*End Slider*/
+/*End Our Clients*/
+/*Start Footer Contact Us*/
+.contact_us {
+  background-image: url('../images/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+
+}
+.contact_us .container .underline {
+  position: relative;
+}
+.contact_us .container .underline h3 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.contact_us .container .underline::after{
+   content: " ";
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+}
+.contact_us .container > p{
+  color: #fff;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.contact_us .container  .row  {
+  margin-bottom: 60px;
+}
+.contact_us .container  .row > div {
+  color: #fff;
+}
+.contact_us .container  .row > div p {
+  line-height: 1.8;
+}
+/*End Footer Contact Us*/
+/*Start Scroll Top*/
+.scroll_top i {
+  color: #fff;
+  background-color: #2980b9;
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}
+/*End Scroll Top*/
